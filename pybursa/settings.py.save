@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'y0s!oamjz-kzh-vrv0^ev97dstwg89my40gz11w&_%t&igior)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['198.211.103.13']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -97,18 +97,9 @@ TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'), )
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
 
 EMAIL_HOST = 'mx1.mirohost.net'
-EMAIL_PORT = 25
-EMAIL_HOST_USER = 'pybursa@mdcexpert.com'
-EMAIL_HOST_PASSWORD = 'x9AgUkx6'
-SERVER_EMAIL = 'pybursa@mdcexpert.com'
-DEFAULT_FROM_EMAIL = 'pybursa@mdcexpert.com'
-EMAIL_SUBJECT_PREFIX = '[PyBursa Feedback]'
-EMAIL_USE_TLS = False
-
-
-
-
-
+EMAIL_PORT = 25'x9AgUkx6'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_PORT = 1025
 ADMINS = (('admin', 'admin@admin.com'))
 
 LOGGING = {
